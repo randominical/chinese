@@ -1,0 +1,11 @@
+@import url(../css/normalize.css);
+@font-face {
+  font-family: 'Kosugi';
+  font-display: swap;
+  src: url("../fonts/KosugiMaru-Regular.woff") format("woff"), url("../fonts/KosugiMaru-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+* {
+  font-family: 'Kosugi', sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
