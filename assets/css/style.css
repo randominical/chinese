@@ -5,6 +5,12 @@
   src: url("../fonts/KosugiMaru-Regular.woff") format("woff"), url("../fonts/KosugiMaru-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
+@font-face {
+  font-family: 'Stalinist';
+  font-display: swap;
+  src: url("../fonts/StalinistOne-Regular.woff") format("woff"), url("../fonts/StalinistOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
 html,
 body {
   height: 100%;
@@ -39,7 +45,7 @@ body {
     right: 0;
     width: 9px;
     height: 100%;
-    background-color: #ffea75; }
+    background-color: #fdf1ae; }
   .page__drag-scroll {
     position: absolute;
     top: 0;
@@ -55,5 +61,10 @@ body {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   position: relative; }
+  .screen__title {
+    color: #ff7504;
+    font-family: 'Stalinist'; }
+    .screen__title_m {
+      font-size: 50px; }
 
 /*# sourceMappingURL=style.css.map */

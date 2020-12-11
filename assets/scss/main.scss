@@ -5,6 +5,13 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Stalinist';
+    font-display: swap;
+    src: url('../fonts/StalinistOne-Regular.woff') format('woff'), url('../fonts/StalinistOne-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @import "../css/normalize.css";
 
@@ -44,7 +51,7 @@ body {
         right: 0;
         width: 9px;
         height: 100%;
-        background-color: rgba(255, 234, 117, 1);
+        background-color: rgb(253, 241, 174);
     }
     &__drag-scroll {
         position: absolute;
@@ -61,4 +68,11 @@ body {
 .screen {
     flex: 1 0 100%;
     position: relative;
+    &__title {
+        color: rgba(255, 117, 4, 1);
+        font-family: 'Stalinist';
+        &_m {
+            font-size: 50px;
+        }
+    }
 }
