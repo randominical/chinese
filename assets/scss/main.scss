@@ -8,6 +8,55 @@
 
 @import "../css/normalize.css";
 
-* {
-    font-family: 'Kosugi', sans-serif;
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background-color: #333;
+    font-family: 'Kosugi', Helvetica, sans-serif;
+}
+//=========================
+.wrapper {
+    min-height: 100%;
+}
+//=========================
+.header {
+
+}
+//=========================
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    &__scroll {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    &__drag-scroll {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+}
+//=========================
+.screen {
+    flex: 1 0 100%;
+    position: relative;
 }
