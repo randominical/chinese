@@ -19,8 +19,8 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 14px;
-    background: whitesmoke;
+    font-size: 26px;
+    background: rgba(245, 245, 245, 1);
     font-family: 'Gothic', sans-serif;
 }
 //=========================
@@ -29,7 +29,27 @@ body {
 }
 //=========================
 .header {
-
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    &__link {
+        color: #fff;
+        font-size: 20px;
+        transition: color 0.3s ease 0s;
+        margin: 0 20px 0 0;
+        &._active {
+            color: #7a956b;
+        }
+    }
 }
 //=========================
 .page {
@@ -51,7 +71,7 @@ body {
         right: 0;
         width: 9px;
         height: 100%;
-        background-color: rgb(253, 241, 174);
+        background-color: rgba(251, 252, 188, 1);
     }
     &__drag-scroll {
         position: absolute;
@@ -71,8 +91,18 @@ body {
     &__title {
         color: rgba(255, 117, 4, 1);
         font-family: 'Stalinist';
+        font-size: 34px;
         &_m {
+            color: rgba(255, 63, 4, 1);
             font-size: 50px;
         }
+    }
+    &__content {
+        padding: 50px 40px 25px 25px;
+        position: relative;
+        z-index: 2;
+    }
+    &__box {
+        display: flex;
     }
 }

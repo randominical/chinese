@@ -15,12 +15,38 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 26px;
   background: whitesmoke;
   font-family: 'Gothic', sans-serif; }
 
 .wrapper {
   min-height: 100%; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .menu__link {
+    color: #fff;
+    font-size: 20px;
+    -webkit-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+    margin: 0 20px 0 0; }
+    .menu__link._active {
+      color: #7a956b; }
 
 .page {
   position: fixed;
@@ -45,7 +71,7 @@ body {
     right: 0;
     width: 9px;
     height: 100%;
-    background-color: #fdf1ae; }
+    background-color: #fbfcbc; }
   .page__drag-scroll {
     position: absolute;
     top: 0;
@@ -63,8 +89,18 @@ body {
   position: relative; }
   .screen__title {
     color: #ff7504;
-    font-family: 'Stalinist'; }
+    font-family: 'Stalinist';
+    font-size: 34px; }
     .screen__title_m {
+      color: #ff3f04;
       font-size: 50px; }
+  .screen__content {
+    padding: 50px 40px 25px 25px;
+    position: relative;
+    z-index: 2; }
+  .screen__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /*# sourceMappingURL=style.css.map */
