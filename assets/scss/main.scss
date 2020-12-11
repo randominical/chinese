@@ -13,7 +13,7 @@ body {
     height: 100%;
     line-height: 1;
     font-size: 14px;
-    background-color: #333;
+    background: whitesmoke;
     font-family: 'Kosugi', Helvetica, sans-serif;
 }
 //=========================
@@ -42,16 +42,18 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        width: 4px;
+        width: 9px;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 234, 117, 1);
     }
     &__drag-scroll {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(255, 138, 4, 1);
+        border-top:  1px solid rgba(255, 117, 4, 1);
+        border-bottom:  1px solid rgba(255, 117, 4, 1);
         cursor: pointer;
     }
 }
