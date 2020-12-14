@@ -15,9 +15,10 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  font-size: 26px;
+  font-size: 30px;
   background: whitesmoke;
-  font-family: 'Gothic', sans-serif; }
+  font-family: 'Gothic', sans-serif;
+  color: #3d4d28; }
 
 .wrapper {
   min-height: 100%; }
@@ -96,6 +97,8 @@ body {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   position: relative; }
+  .screen:nth-child(2n) .screen__title {
+    text-align: center; }
   .screen__title {
     color: #ff7504;
     font-family: 'Stalinist';

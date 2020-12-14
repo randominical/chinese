@@ -19,9 +19,10 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 26px;
+    font-size: 30px;
     background: rgba(245, 245, 245, 1);
     font-family: 'Gothic', sans-serif;
+    color: rgb(61, 77, 40);
 }
 //=========================
 .wrapper {
@@ -96,6 +97,11 @@ body {
 .screen {
     flex: 1 0 100%;
     position: relative;
+    &:nth-child(2n) {
+        .screen__title {
+            text-align: center;
+        }
+    }
     &__title {
         color: rgba(255, 117, 4, 1);
         font-family: 'Stalinist';
@@ -114,5 +120,14 @@ body {
     }
     &__box {
         display: flex;
+    }
+    &__text {
+
+    }
+    &__list {
+
+    }
+    &__li {
+
     }
 }
