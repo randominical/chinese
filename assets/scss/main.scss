@@ -279,3 +279,39 @@ body {
         }
     }
 }
+//=========================
+.form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__input {
+        flex: 1 0 45%;
+        height: 50px;
+        padding: 0 20px;
+        border: 1px solid rgba(238, 237, 237, 1);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        &:focus {
+            box-shadow: inset 0px 0px 5px 0px rgba(212, 212, 212, 1);
+        }
+        &:first-child {
+            margin: 0 20px 20px 0;
+        }
+        &_s {
+            flex: 0 0 auto;
+            padding: 0 100px;
+            justify-content: center;
+            color: rgba(255, 255, 255, 1);
+            background: rgba(206, 31, 0, 1);
+            transition: color .3s ease 0s, background .3s ease 0s, border .3s ease 0s;
+            &:hover {
+                color: rgba(206, 31, 0, 1);
+                background:rgba(255, 255, 255, 1);
+                border: 1px solid rgba(206, 31, 0, 1);
+            }
+        }
+    }
+}
