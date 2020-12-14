@@ -275,9 +275,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .form__input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 45%;
-            flex: 1 0 45%;
     height: 50px;
     padding: 0 20px;
     border: 1px solid #eeeded;
@@ -293,6 +290,10 @@ body {
               box-shadow: inset 0px 0px 5px 0px #d4d4d4; }
     .form__input:first-child {
       margin: 0 20px 20px 0; }
+    .form__input_i {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 45%;
+              flex: 1 0 45%; }
     .form__input_s {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;

@@ -309,7 +309,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     &__input {
-        flex: 1 0 45%;
         height: 50px;
         padding: 0 20px;
         border: 1px solid rgba(238, 237, 237, 1);
@@ -321,6 +320,9 @@ body {
         }
         &:first-child {
             margin: 0 20px 20px 0;
+        }
+        &_i {
+            flex: 1 0 45%;
         }
         &_s {
             flex: 0 0 auto;
