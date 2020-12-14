@@ -97,6 +97,14 @@ body {
 .screen {
     flex: 1 0 100%;
     position: relative;
+    &__body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
     &__title {
         color: rgba(255, 117, 4, 1);
         font-family: 'Stalinist';
@@ -234,8 +242,8 @@ body {
         }
     }
     &:nth-child(8) {
+        background: rgba(255, 255, 201, 1);
         .screen__image {
-            background: rgba(255, 255, 201, 1);
             img {
                 bottom: 0;
             }
