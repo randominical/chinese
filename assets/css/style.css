@@ -221,6 +221,8 @@ body {
     background: #ffffc9; }
     .screen:nth-child(8) .screen__image img {
       bottom: 0; }
+  .screen:last-child .screen__text {
+    text-align: center; }
   .screen:last-child .screen__image img {
     width: 15%;
     bottom: 30px;

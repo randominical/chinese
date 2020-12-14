@@ -240,6 +240,9 @@ body {
         }
     }
     &:last-child {
+        .screen__text {
+            text-align: center;
+        }
         .screen__image {
             img {
                 width: 15%;
