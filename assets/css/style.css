@@ -124,6 +124,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .screen__iconbar {
+    margin: 0 auto; }
+  .screen__link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden; }
+    .screen__link img {
+      width: 100%;
+      height: auto; }
   .screen__image {
     position: absolute;
     width: 100%;
@@ -166,5 +176,7 @@ body {
   .column__photo img {
     width: 100%;
     height: auto; }
+.column__text {
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
