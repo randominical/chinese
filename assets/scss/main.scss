@@ -97,15 +97,10 @@ body {
 .screen {
     flex: 1 0 100%;
     position: relative;
-    &:nth-child(2n) {
-        .screen__title {
-            text-align: center;
-        }
-    }
     &__title {
         color: rgba(255, 117, 4, 1);
         font-family: 'Stalinist';
-        font-size: 34px;
+        font-size: 36px;
         line-height: 130%;
         text-transform: uppercase;
         &_m {
@@ -114,7 +109,11 @@ body {
         }
     }
     &__content {
-        padding: 50px 40px 25px 25px;
+        padding: 50px 5% 10px 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         position: relative;
         z-index: 2;
     }
@@ -129,5 +128,78 @@ body {
     }
     &__li {
 
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        img {
+            position: absolute;
+            width: 25%;
+            height: auto;
+            right: 50px;
+        }
+    }
+    &:nth-child(2n), &:last-child {
+        .screen__title {
+            text-align: center;
+        }
+    }
+    &:first-child {
+        .screen__image {
+            img {
+                bottom: 0;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .screen__image {
+            img {
+                top: 0;
+            }
+        }
+    }
+    &:nth-child(6) {
+        .screen__image {
+            opacity: .5;
+            img {
+                object-fit: cover;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    &:nth-child(8) {
+        .screen__image {
+            background: rgba(255, 255, 201, 1);
+            img {
+                bottom: 0;
+            }
+        }
+    }
+    &:last-child {
+        .screen__image {
+            img {
+                width: 15%;
+                bottom: 30px;
+                left: 30px;
+            }
+        }
+    }
+}
+//=========================
+.column {
+    &__photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
