@@ -101,8 +101,8 @@ body {
     -webkit-box-shadow: 6px 5px 14px 2px rgba(128, 128, 128, 0.5);
             box-shadow: 6px 5px 14px 2px rgba(128, 128, 128, 0.5);
     cursor: pointer;
-    -webkit-transition: background .3s ease 0s !important;
-    transition: background .3s ease 0s !important; }
+    -webkit-transition: all .3s ease 0s !important;
+    transition: all .3s ease 0s !important; }
     .page__drag-scroll:hover {
       background: #ff7504; }
 
