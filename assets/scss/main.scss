@@ -252,6 +252,7 @@ body {
         height: 150px;
         border-radius: 50%;
         overflow: hidden;
+        margin: 0 0 15px 0;
         img {
             width: 100%;
             height: auto;
@@ -259,5 +260,8 @@ body {
     }
     &__text {
         font-size: 20px;
+        p {
+            margin: .5em 0;
+        }
     }
 }

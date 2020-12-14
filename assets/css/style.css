@@ -227,11 +227,14 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 0 15px 0; }
   .column__photo img {
     width: 100%;
     height: auto; }
 .column__text {
   font-size: 20px; }
+  .column__text p {
+    margin: .5em 0; }
 
 /*# sourceMappingURL=style.css.map */
