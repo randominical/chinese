@@ -233,6 +233,9 @@ body {
       width: 100%;
       bottom: 0;
       right: 0; }
+  .screen:nth-child(7) .screen__image img {
+    width: 10%;
+    top: 30px; }
   .screen:nth-child(8) {
     background: #ffffc9; }
     .screen:nth-child(8) .screen__image img {

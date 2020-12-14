@@ -251,6 +251,14 @@ body {
             }
         }
     }
+    &:nth-child(7) {
+        .screen__image {
+            img {
+                width: 10%;
+                top: 30px;
+            }
+        }
+    }
     &:nth-child(8) {
         background: rgba(255, 255, 201, 1);
         .screen__image {
