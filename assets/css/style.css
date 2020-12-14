@@ -107,7 +107,7 @@ body {
       color: #ff3f04;
       font-size: 50px; }
   .screen__content {
-    padding: 50px 5% 10px 5%;
+    padding: 50px 5% 30px 5%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -116,14 +116,57 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     z-index: 2; }
   .screen__box {
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .screen__box_1 {
+      margin: 30px auto 0 auto; }
+    .screen__box_2 {
+      margin: 0 auto; }
+  .screen__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .screen__column_1 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.333%;
+              flex: 0 0 33.333%;
+      line-height: 110%; }
+    .screen__column_2 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%; }
+    .screen__column span {
+      font-weight: 800;
+      color: #e63600; }
+  .screen__text span {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #bd2d01; }
+  .screen__li {
+    background: url("../img/star.png") left 50%/20px auto no-repeat;
+    padding: 0 0 0 30px; }
   .screen__iconbar {
     margin: 0 auto; }
   .screen__link {
@@ -147,6 +190,18 @@ body {
       right: 50px; }
   .screen:nth-child(2n) .screen__title, .screen:last-child .screen__title {
     text-align: center; }
+  .screen:first-child .screen__text {
+    width: 70%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 40px; }
   .screen:first-child .screen__image img {
     bottom: 0; }
   .screen:nth-child(3) .screen__image img {

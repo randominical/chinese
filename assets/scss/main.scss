@@ -109,25 +109,56 @@ body {
         }
     }
     &__content {
-        padding: 50px 5% 10px 5%;
+        padding: 50px 5% 30px 5%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         position: relative;
         z-index: 2;
     }
     &__box {
+        width: 70%; 
         display: flex;
+        justify-content: space-between;
+        &_1 {
+            margin: 30px auto 0 auto;
+        }
+        &_2 {
+            margin: 0 auto;
+        }
+    }
+    &__column {
+        &_1 {
+            flex: 0 0 33.333%;
+            line-height: 110%;
+        }
+        &_2 {
+            flex: 0 0 50%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        span {
+            font-weight: 800;
+            color: rgba(230, 54, 0, 1);
+        }
     }
     &__text {
-
+        span {
+            font-weight: 800;
+            text-transform: uppercase;
+            color: rgba(189, 45, 1, 1);
+        }
     }
     &__list {
 
     }
     &__li {
-
+        background: url('../img/star.png') left 50%/20px auto no-repeat;
+        padding: 0 0 0 30px;
     }
     &__iconbar {
         margin: 0 auto;
@@ -161,6 +192,17 @@ body {
         }
     }
     &:first-child {
+        .screen__text {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 40px;
+            p {
+
+            }
+        }
         .screen__image {
             img {
                 bottom: 0;
