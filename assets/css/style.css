@@ -195,15 +195,6 @@ body {
     text-align: center; }
   .screen:first-child .screen__text {
     width: 70%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     font-size: 40px; }
   .screen:first-child .screen__image img {
     bottom: 0; }
