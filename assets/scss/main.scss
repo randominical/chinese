@@ -208,6 +208,17 @@ body {
             right: 50px;
         }
     }
+    &__timer {
+        background: rgba(255, 255, 255, 1);
+        margin: 0 auto;
+        padding: 20px 12px;
+        color: rgba(216, 50, 0, 1);
+        font-size: 50px;
+        font-weight: 800;
+        text-shadow: 1px 1px 2px rgba(235, 214, 95, 1);
+        border-radius: 5px;
+        box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, .5);
+    }
     &:nth-child(2n), &:last-child {
         .screen__title {
             text-align: center;
