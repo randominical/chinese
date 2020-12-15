@@ -51,6 +51,9 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%); }
+  @media (max-width: 766.98px) {
+    .header {
+      display: none; } }
 
 .menu {
   display: -webkit-box;
@@ -67,6 +70,8 @@ body {
     white-space: nowrap;
     -webkit-transition: color .3s ease 0s;
     transition: color .3s ease 0s; }
+    .menu__link:last-child {
+      margin: 0; }
     .menu__link:hover {
       color: rgba(216, 50, 0, 0.5); }
     .menu__link._active {

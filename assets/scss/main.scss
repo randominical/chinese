@@ -59,6 +59,9 @@ body {
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.5);
     transform: translate(0, - 100%);
+    @media (max-width: $md3 + px) {
+        display: none;
+    }
 }
 .menu {
     display: flex;
@@ -70,6 +73,9 @@ body {
         margin: 0 20px 0 0;
         white-space: nowrap;
         transition: color .3s ease 0s;
+        &:last-child {
+            margin: 0;
+        }
         &:hover {
             color: rgba(216, 50, 0, .5);
         }
