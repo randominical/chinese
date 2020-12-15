@@ -11,6 +11,12 @@
   src: url("../fonts/StalinistOne-Regular.woff") format("woff"), url("../fonts/StalinistOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
+@font-face {
+  font-family: 'Icomoon';
+  font-display: swap;
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
 html,
 body {
   height: 100%;
@@ -191,13 +197,10 @@ body {
     text-align: center; }
   .screen__link {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin: 0 2px 0 0;
     overflow: hidden; }
-    .screen__link img {
-      width: 100%;
-      height: auto; }
     .screen__link:last-child {
       margin: 0; }
   .screen__image {
@@ -321,8 +324,25 @@ body {
   font-size: 50px;
   font-weight: 800;
   text-shadow: 1px 1px 2px #ebd65f;
+  border: 1px solid #ce1f00;
   border-radius: 5px;
   -webkit-box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5);
           box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5); }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-size: 50px;
+  color: black;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease; }
+  [class^="icon-"]:hover, [class*=" icon-"]:hover {
+    color: #007e7e; }
+
+.icon-email:before {
+  content: "\e900"; }
+.icon-facebook:before {
+  content: "\e901"; }
+.icon-telegram:before {
+  content: "\e902"; }
 
 /*# sourceMappingURL=style.css.map */
