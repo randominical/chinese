@@ -1,4 +1,4 @@
-@import url(../css/normalize.css);
+@charset "UTF-8";
 @font-face {
   font-family: 'Gothic';
   font-display: swap;
@@ -11,6 +11,36 @@
   src: url("../fonts/StalinistOne-Regular.woff") format("woff"), url("../fonts/StalinistOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
+/*Обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit; }
+
 html,
 body {
   height: 100%;
@@ -110,7 +140,17 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .screen__body {
     position: absolute;
     width: 100%;
@@ -128,18 +168,7 @@ body {
       color: #ff3f04;
       font-size: 50px; }
   .screen__content {
-    padding: 50px 5% 30px 5%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 100px 5% 30px 5%;
     position: relative;
     z-index: 2; }
   .screen__box {
