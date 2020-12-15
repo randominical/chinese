@@ -64,6 +64,7 @@ body {
     color: rgba(190, 190, 190, 0.9);
     font-size: 16px;
     margin: 0 20px 0 0;
+    white-space: nowrap;
     -webkit-transition: color .3s ease 0s;
     transition: color .3s ease 0s; }
     .menu__link:hover {

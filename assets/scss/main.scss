@@ -21,6 +21,12 @@
 }
 @import url('../css/normalize.css');
 //=========================
+$md1: 1198.98;
+$md2: 990.98;
+$md3: 766.98;
+$md4: 479.98;
+$md5: 319.98;
+//=========================
 html,
 body {
     height: 100%;
@@ -62,6 +68,7 @@ body {
         color:  rgba(190, 190, 190, 0.9);
         font-size: 16px;
         margin: 0 20px 0 0;
+        white-space: nowrap;
         transition: color .3s ease 0s;
         &:hover {
             color: rgba(216, 50, 0, .5);
@@ -175,9 +182,6 @@ body {
             text-transform: uppercase;
             color: rgba(189, 45, 1, 1);
         }
-    }
-    &__list {
-
     }
     &__li {
         background: url('../img/star.png') left 50%/20px auto no-repeat;
