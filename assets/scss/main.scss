@@ -35,6 +35,9 @@ body {
     background: rgba(245, 245, 245, 1);
     font-family: 'Gothic', sans-serif;
     color: rgb(61, 77, 40);
+    @media (max-width: $md3 + px) {
+        font-size: 20px;
+    }
 }
 //=========================
 .wrapper {
@@ -147,6 +150,12 @@ body {
             color: rgba(255, 63, 4, 1);
             font-size: 50px;
         }
+        @media (max-width: $md3 + px) {
+            font-size: 26px;
+            &_m {
+                font-size: 35px;
+            }
+        }
     }
     &__content {
         padding: 50px 5% 30px 5%;
@@ -231,6 +240,9 @@ body {
         .screen__text {
             width: 70%;
             font-size: 40px;
+            @media (max-width: $md3 + px) {
+                font-size: 28px;
+            }
         }
         .screen__image {
             img {
