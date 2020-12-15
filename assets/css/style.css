@@ -239,6 +239,8 @@ body {
     top: 30px; }
   .screen:nth-child(8) {
     background: #ffffc9; }
+    .screen:nth-child(8) .screen__title {
+      margin: 0 0 2em 0; }
     .screen:nth-child(8) .screen__image img {
       bottom: 0; }
   .screen:last-child .screen__text {

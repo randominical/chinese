@@ -262,6 +262,9 @@ body {
     }
     &:nth-child(8) {
         background: rgba(255, 255, 201, 1);
+        .screen__title {
+            margin: 0 0 2em 0;
+        }
         .screen__image {
             img {
                 bottom: 0;
