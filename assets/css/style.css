@@ -188,7 +188,7 @@ body {
     background: url("../img/star.png") left 50%/20px auto no-repeat;
     padding: 0 0 0 30px; }
   .screen__iconbar {
-    margin: 0 auto; }
+    text-align: center; }
   .screen__link {
     display: inline-block;
     width: 50px;
@@ -212,16 +212,7 @@ body {
       height: auto;
       right: 50px; }
   .screen__timer {
-    background: white;
-    margin: 0 auto;
-    padding: 20px 12px;
-    color: #d83200;
-    font-size: 50px;
-    font-weight: 800;
-    text-shadow: 1px 1px 2px #ebd65f;
-    border-radius: 5px;
-    -webkit-box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5);
-            box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5); }
+    text-align: center; }
   .screen:nth-child(2n) .screen__title, .screen:last-child .screen__title {
     text-align: center; }
   .screen:first-child .screen__text {
@@ -320,5 +311,16 @@ body {
         color: #ce1f00;
         background: white;
         border: 1px solid #ce1f00; }
+
+.timer__number {
+  background: white;
+  padding: 20px 12px;
+  color: #d83200;
+  font-size: 50px;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px #ebd65f;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5);
+          box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
