@@ -45,7 +45,6 @@ body {
 //=========================
 .wrapper {
     min-height: 100%;
-    min-width: 320px;
     opacity: 0;
     transition: opacity 0.6s ease 0s;
     &._loaded {
@@ -479,9 +478,11 @@ body {
 .form {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
     &__input {
         height: 50px;
         padding: 0 20px;
@@ -489,6 +490,7 @@ body {
         border-radius: 10px;
         display: flex;
         align-items: center;
+        margin: 0 0 20px 0;
         &:focus {
             box-shadow: inset 0px 0px 5px 0px rgba(212, 212, 212, 1);
         }
@@ -496,7 +498,7 @@ body {
             margin: 0 20px 20px 0;
         }
         &_i {
-            flex: 1 0 45%;
+            flex: 0 0 50%;
         }
         &_s {
             flex: 0 0 auto;
@@ -509,6 +511,39 @@ body {
                 color: rgba(206, 31, 0, 1);
                 background:rgba(255, 255, 255, 1);
                 border: 1px solid rgba(206, 31, 0, 1);
+            }
+        }
+    }
+    @media (max-width: $md1 + px) {
+        width: 90%;
+    }
+    @media (max-width: $md2 + px) {
+        width: 100%;
+        &__row {
+            display: block;
+        }
+        &__input {
+            width: 80%;
+            height: 45px;
+            margin: 0 0 15px 0;
+            &:first-child {
+                margin: 0 0 15px 0;
+            }
+            &_s {
+                width: auto;
+            }
+        }
+    }
+    @media (max-width: $md4 + px) {
+        &__input {
+            width: 100%;
+            margin: 0 0 10px 0;
+            &:first-child {
+                margin: 0 0 10px 0;
+            }
+            &_s {
+                width: auto;
+                padding: 0 40px;
             }
         }
     }

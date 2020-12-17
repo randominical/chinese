@@ -36,7 +36,6 @@ body {
 
 .wrapper {
   min-height: 100%;
-  min-width: 320px;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease 0s;
   transition: opacity 0.6s ease 0s; }
@@ -423,14 +422,14 @@ body {
 .form {
   width: 80%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  padding: 0; }
+  .form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .form__input {
     height: 50px;
     padding: 0 20px;
@@ -441,16 +440,17 @@ body {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0 0 20px 0; }
     .form__input:focus {
       -webkit-box-shadow: inset 0px 0px 5px 0px #d4d4d4;
               box-shadow: inset 0px 0px 5px 0px #d4d4d4; }
     .form__input:first-child {
       margin: 0 20px 20px 0; }
     .form__input_i {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 0 45%;
-              flex: 1 0 45%; }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%; }
     .form__input_s {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
@@ -467,6 +467,31 @@ body {
         color: #ce1f00;
         background: white;
         border: 1px solid #ce1f00; }
+  @media (max-width: 1198.98px) {
+    .form {
+      width: 90%; } }
+  @media (max-width: 990.98px) {
+    .form {
+      width: 100%; }
+      .form__row {
+        display: block; }
+      .form__input {
+        width: 80%;
+        height: 45px;
+        margin: 0 0 15px 0; }
+        .form__input:first-child {
+          margin: 0 0 15px 0; }
+        .form__input_s {
+          width: auto; } }
+  @media (max-width: 479.98px) {
+    .form__input {
+      width: 100%;
+      margin: 0 0 10px 0; }
+      .form__input:first-child {
+        margin: 0 0 10px 0; }
+      .form__input_s {
+        width: auto;
+        padding: 0 40px; } }
 
 .timer__number {
   background: white;
