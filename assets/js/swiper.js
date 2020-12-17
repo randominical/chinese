@@ -78,7 +78,7 @@ function setScrollType() {
             const pageSlideContentHeight = pageSlideContent.offsetHeight;
             if (pageSlideContentHeight > window.innerHeight) {
                 wrapper.classList.add('_free');
-                pageSlider.params.spaceBetween = 50;
+                pageSlider.params.spaceBetween = 30;
                 pageSlider.params.freeMode = true;
                 break;
             }

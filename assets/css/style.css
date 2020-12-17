@@ -402,7 +402,7 @@ body {
               justify-content: flex-start; } }
   @media (max-width: 766.98px), (max-height: 500px) {
     .screen__content {
-      padding: 30px 5% 50px 5%; }
+      padding: 30px 5% 30px 5%; }
     .screen__title {
       font-size: 26px; }
       .screen__title_m {
