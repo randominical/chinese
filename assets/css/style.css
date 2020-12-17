@@ -537,6 +537,9 @@ body {
   transition: color .3s ease; }
   [class^="icon-"]:hover, [class*=" icon-"]:hover {
     color: #007e7e; }
+  @media (max-width: 766.98px) {
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 40px; } }
 
 .icon-email:before {
   content: "\e900"; }

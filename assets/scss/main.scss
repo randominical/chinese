@@ -596,6 +596,9 @@ body {
     &:hover {
         color: rgba(0, 126, 126, 1);
     }
+    @media (max-width: $md3 + px) {
+        font-size: 40px;
+    }
 }
 .icon {
     &-email:before {
