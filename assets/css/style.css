@@ -273,6 +273,7 @@ body {
     overflow: hidden; }
   .screen__title {
     color: #ff7504;
+    text-shadow: 1px 1px 1px whitesmoke, -1px -1px 1px whitesmoke, 1px -1px 1px whitesmoke, -1px 1px 1px whitesmoke;
     font-family: 'Stalinist';
     font-size: 36px;
     line-height: 130%;
