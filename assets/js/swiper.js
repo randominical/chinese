@@ -4,7 +4,7 @@ let pageSlider = new Swiper('.page', {
     wrapperClass: "page__wrapper",
     slideClass: "page__screen",
     direction: 'vertical',
-    slidePerView: 'auto',
+    slidesPerView: 'auto',
     parallax: true,
     keyboard: {
         enabled: true,
