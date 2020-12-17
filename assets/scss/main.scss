@@ -290,6 +290,7 @@ body {
         width: 70%; 
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         &_1 {
             margin: 30px auto 0 auto;
         }

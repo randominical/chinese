@@ -294,7 +294,10 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     .screen__box_1 {
       margin: 30px auto 0 auto; }
     .screen__box_2 {
