@@ -119,7 +119,7 @@ body {
       font-size: 12px; } }
   @media (max-width: 540px), (max-height: 500px) {
     .menu__burger {
-      background: red;
+      background: yellow;
       display: block;
       position: fixed;
       top: 15px;
@@ -187,6 +187,7 @@ body {
                 transform: translate(0, 0);
         z-index: 3; }
     .menu__list {
+      height: auto;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
