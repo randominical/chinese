@@ -117,7 +117,7 @@ body {
       margin: 0 8px 0 0; }
     .menu__link {
       font-size: 12px; } }
-  @media (max-width: 540px), (max-height: 500px) {
+  @media (max-width: 540px) {
     .menu__burger {
       display: block;
       position: fixed;
@@ -187,8 +187,7 @@ body {
                 transform: translate(0, 0);
         z-index: 3; }
     .menu__list {
-      background: chartreuse;
-      height: 100%;
+      height: auto;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -205,6 +204,10 @@ body {
       font-size: 16px;
       font-weight: 600;
       text-align: left; } }
+  @media (max-height: 500px) {
+    .menu__body {
+      height: 100vh;
+      padding: 15px 30px 60px 40px; } }
 
 .page {
   position: fixed;

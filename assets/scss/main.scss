@@ -116,7 +116,7 @@ body {
             font-size: 12px;
         }
     }
-    @media (max-width: 540px), (max-height: 500px) {
+    @media (max-width: 540px) {
         &__burger {
             display: block;
             position: fixed;
@@ -188,8 +188,7 @@ body {
             }
         }
         &__list {
-            background: chartreuse;
-            height: 100%;
+            height: auto;
             flex-direction: column;
             align-items: flex-start;
             li {
@@ -203,6 +202,12 @@ body {
             font-size: 16px;
             font-weight: 600;
             text-align: left;
+        }
+    }
+    @media (max-height: 500px) {
+        &__body {
+            height: 100vh;
+            padding: 15px 30px 60px 40px;
         }
     }
 }
