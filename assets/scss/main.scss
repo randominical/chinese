@@ -38,7 +38,7 @@ body {
     @media (max-width: $md3 + px) {
         font-size: 20px;
     }
-    @media (max-width: $md4 + px) {
+    @media (max-width: $md4 + px), (max-height: 500px) {
         font-size: 16px;
     }
 }
@@ -67,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     transform: translate(0, - 100%);
-    @media (max-width: 540px) {
+    @media (max-width: 540px), (max-height: 500px) {
         background: transparent;
         width: auto;
         height: auto;
@@ -118,7 +118,7 @@ body {
             font-size: 12px;
         }
     }
-    @media (max-width: 540px) {
+    @media (max-width: 540px), (max-height: 500px) {
         &__burger {
             display: block;
             position: fixed;
@@ -279,7 +279,7 @@ body {
         }
     }
     &__content {
-        padding: 50px 5% 30px 5%;
+        padding: 70px 5% 50px 5%;
         position: relative;
         z-index: 2;
     }
@@ -430,7 +430,18 @@ body {
             }
         }
     }
-    @media (max-width: $md3 + px) {
+    @media (max-height: 500px) {
+        &:first-child {
+            justify-content: flex-start;
+            .screen__text {
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width: $md3 + px), (max-height: 500px) {
+        &__content {
+            padding: 30px 5% 50px 5%;
+        }
         &__title {
             font-size: 26px;
             &_m {
@@ -455,14 +466,21 @@ body {
         }
         &__box {
             width: 100%;
+            align-items: flex-end;
         }
     }
 }
 //=========================
 .column {
     margin: 0 10px 0 0;
+    position: relative;
     &:last-child {
         margin: 0;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__photo {
         width: 150px;
@@ -482,13 +500,25 @@ body {
             margin: .5em 0;
         }
     }
-    @media (max-width: $md3 + px) {
+    @media (max-height: 500px) {
+        flex-direction: row;
+        &__top {
+            margin: 0 10px 0 0;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__text {
+            text-align: right;
+        }
+    }
+    @media (max-width: $md3 + px), (max-height: 500px) {
         &__photo {
             width: 70px;
             height: 70px;
         }
     }
-    @media (max-width: 570px) {
+    @media (max-width: 570px), (max-height: 500px) {
         &__text {
             font-size: 14px !important;
         }

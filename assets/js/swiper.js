@@ -68,6 +68,7 @@ function menuSliderRemove() {
 function setScrollType() {
     if (wrapper.classList.contains('_free')) {
         wrapper.classList.remove('_free');
+        pageSlider.params.spaceBetween = 0;
         pageSlider.params.freeMode = false;
     }
     for (let index = 0; index < pageSlider.slides.length; index++) {
@@ -77,6 +78,7 @@ function setScrollType() {
             const pageSlideContentHeight = pageSlideContent.offsetHeight;
             if (pageSlideContentHeight > window.innerHeight) {
                 wrapper.classList.add('_free');
+                pageSlider.params.spaceBetween = 50;
                 pageSlider.params.freeMode = true;
                 break;
             }
