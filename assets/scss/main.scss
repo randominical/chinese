@@ -116,8 +116,9 @@ body {
             font-size: 12px;
         }
     }
-    @media (max-width: 540px) {
+    @media (max-width: 540px), (max-height: 500px) {
         &__burger {
+            background: green;
             display: block;
             position: fixed;
             top: 15px;
@@ -188,10 +189,6 @@ body {
             }
         }
         &__list {
-<<<<<<< HEAD
-            height: auto;
-=======
->>>>>>> parent of 14f13bd... Баг меню
             flex-direction: column;
             align-items: flex-start;
             li {
@@ -205,12 +202,6 @@ body {
             font-size: 16px;
             font-weight: 600;
             text-align: left;
-        }
-    }
-    @media (max-height: 500px) {
-        &__body {
-            height: 100vh;
-            padding: 15px 30px 60px 40px;
         }
     }
 }
