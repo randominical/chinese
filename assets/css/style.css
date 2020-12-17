@@ -119,7 +119,7 @@ body {
       font-size: 12px; } }
   @media (max-width: 540px), (max-height: 500px) {
     .menu__burger {
-      background: green;
+      background: red;
       display: block;
       position: fixed;
       top: 15px;
@@ -170,8 +170,7 @@ body {
                 transform: scale(0); }
     .menu__body {
       position: fixed;
-      height: auto;
-      max-height: 100vh;
+      height: 100vh;
       width: auto;
       overflow: auto;
       top: 0;

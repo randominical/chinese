@@ -118,7 +118,7 @@ body {
     }
     @media (max-width: 540px), (max-height: 500px) {
         &__burger {
-            background: green;
+            background: red;
             display: block;
             position: fixed;
             top: 15px;
@@ -172,8 +172,7 @@ body {
         }
         &__body {
             position: fixed;
-            height: auto;
-            max-height: 100vh;
+            height: 100vh;
             width: auto;
             overflow: auto;
             top: 0;
