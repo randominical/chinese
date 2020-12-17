@@ -417,10 +417,7 @@ body {
       .screen__title_m {
         font-size: 24px; }
     .screen__box {
-      width: 100%;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; } }
+      width: 100%; } }
 
 .column {
   margin: 0 10px 0 0;
