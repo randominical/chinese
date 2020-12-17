@@ -107,10 +107,11 @@ body {
             align-items: center;
     -webkit-transition: color .3s ease 0s;
     transition: color .3s ease 0s; }
-    .menu__link:hover {
-      color: rgba(216, 50, 0, 0.5); }
     .menu__link._active {
       color: #d83200; }
+  @media (min-width: 766.99px) {
+    .menu__link:hover {
+      color: rgba(216, 50, 0, 0.5); } }
   @media (max-width: 766.98px) {
     .menu__list li {
       margin: 0 8px 0 0; }
@@ -241,8 +242,9 @@ body {
     cursor: pointer;
     -webkit-transition: all .3s ease 0s !important;
     transition: all .3s ease 0s !important; }
+  @media (min-width: 766.99px) {
     .page__drag-scroll:hover {
-      background: #ff7504; }
+      background: #ff7504; } }
   @media (max-width: 766.98px) {
     .page__scroll {
       width: 2px; }
@@ -515,10 +517,6 @@ body {
       background: #ce1f00;
       -webkit-transition: color .3s ease 0s, background .3s ease 0s, border .3s ease 0s;
       transition: color .3s ease 0s, background .3s ease 0s, border .3s ease 0s; }
-      .form__input_s:hover {
-        color: #ce1f00;
-        background: white;
-        border: 1px solid #ce1f00; }
   @media (max-width: 1198.98px) {
     .form {
       width: 90%; } }
@@ -535,6 +533,11 @@ body {
           margin: 0 0 15px 0; }
         .form__input_s {
           width: auto; } }
+  @media (min-width: 766.99px) {
+    .form__input_s:hover {
+      color: #ce1f00;
+      background: white;
+      border: 1px solid #ce1f00; } }
   @media (max-width: 479.98px) {
     .form__input {
       width: 100%;
@@ -570,8 +573,9 @@ body {
   color: black;
   -webkit-transition: color .3s ease;
   transition: color .3s ease; }
-  [class^="icon-"]:hover, [class*=" icon-"]:hover {
-    color: #007e7e; }
+  @media (min-width: 766.99px) {
+    [class^="icon-"]:hover, [class*=" icon-"]:hover {
+      color: #007e7e; } }
   @media (max-width: 766.98px) {
     [class^="icon-"], [class*=" icon-"] {
       font-size: 40px; } }
