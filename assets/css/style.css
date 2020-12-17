@@ -521,6 +521,13 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5);
           box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, 0.5); }
+  @media (max-width: 766.98px) {
+    .timer__number {
+      padding: 15px 12px;
+      font-size: 40px; } }
+  @media (max-width: 479.98px) {
+    .timer__number {
+      font-size: 30px; } }
 
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;

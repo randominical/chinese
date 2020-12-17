@@ -579,6 +579,13 @@ body {
     border: 1px solid rgba(206, 31, 0, 1);
     border-radius: 5px;
     box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, .5);
+    @media (max-width: $md3 + px) {
+        padding: 15px 12px;
+        font-size: 40px;
+    }
+    @media (max-width: $md4 + px) {
+        font-size: 30px;
+    }
 }
 //=========================
 [class^="icon-"], [class*=" icon-"] {
