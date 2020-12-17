@@ -397,9 +397,7 @@ body {
     .screen:first-child {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start; }
-      .screen:first-child .screen__text {
-        font-size: 16px; } }
+              justify-content: flex-start; } }
   @media (max-width: 766.98px), (max-height: 500px) {
     .screen__content {
       padding: 30px 5% 50px 5%; }
@@ -410,7 +408,7 @@ body {
     .screen__box {
       width: 90%; }
     .screen:first-child .screen__text {
-      font-size: 28px; } }
+      font-size: 18px; } }
   @media (max-width: 479.98px) {
     .screen__title {
       font-size: 20px; }

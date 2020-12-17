@@ -21,12 +21,6 @@
 }
 @import url('../css/normalize.css');
 //=========================
-$md1: 1198.98;
-$md2: 990.98;
-$md3: 766.98;
-$md4: 479.98;
-$md5: 319.98;
-//=========================
 html,
 body {
     height: 100%;
@@ -35,10 +29,10 @@ body {
     background: rgba(245, 245, 245, 1);
     font-family: 'Gothic', sans-serif;
     color: rgba(61, 77, 40, 1);
-    @media (max-width: $md3 + px) {
+    @media (max-width: 766.98px) {
         font-size: 20px;
     }
-    @media (max-width: $md4 + px), (max-height: 500px) {
+    @media (max-width: 479.98px), (max-height: 500px) {
         font-size: 16px;
     }
 }
@@ -108,7 +102,7 @@ body {
             color: rgba(216, 50, 0, 1);
         }
     }
-    @media (max-width: $md3 + px) {
+    @media (max-width: 766.98px) {
         &__list {
             li {
                 margin: 0 8px 0 0;
@@ -243,7 +237,7 @@ body {
             background: rgba(255, 117, 4, 1);
         }
     }
-    @media (max-width: $md3 + px) {
+    @media (max-width: 766.98px) {
         &__scroll {
             width: 2px;
         }
@@ -434,12 +428,9 @@ body {
     @media (max-height: 500px) {
         &:first-child {
             justify-content: flex-start;
-            .screen__text {
-                font-size: 16px;
-            }
         }
     }
-    @media (max-width: $md3 + px), (max-height: 500px) {
+    @media (max-width: 766.98px), (max-height: 500px) {
         &__content {
             padding: 30px 5% 50px 5%;
         }
@@ -454,11 +445,11 @@ body {
         }
         &:first-child {
             .screen__text {
-                font-size: 28px;
+                font-size: 18px;
             }
         }
     }
-    @media (max-width: $md4 + px) {
+    @media (max-width: 479.98px) {
         &__title {
             font-size: 20px;
             &_m {
@@ -513,7 +504,7 @@ body {
             text-align: right;
         }
     }
-    @media (max-width: $md3 + px), (max-height: 500px) {
+    @media (max-width: 766.98px), (max-height: 500px) {
         &__photo {
             width: 70px;
             height: 70px;
@@ -565,10 +556,10 @@ body {
             }
         }
     }
-    @media (max-width: $md1 + px) {
+    @media (max-width: 1198.98px) {
         width: 90%;
     }
-    @media (max-width: $md2 + px) {
+    @media (max-width: 990.98px) {
         width: 100%;
         &__row {
             display: block;
@@ -585,7 +576,7 @@ body {
             }
         }
     }
-    @media (max-width: $md4 + px) {
+    @media (max-width: 479.98px) {
         &__input {
             width: 100%;
             margin: 0 0 10px 0;
@@ -610,11 +601,11 @@ body {
     border: 1px solid rgba(206, 31, 0, 1);
     border-radius: 5px;
     box-shadow: 2px 3px 3px 1px rgba(236, 227, 177, .5);
-    @media (max-width: $md3 + px) {
+    @media (max-width: 766.98px) {
         padding: 15px 12px;
         font-size: 40px;
     }
-    @media (max-width: $md4 + px) {
+    @media (max-width: 479.98px) {
         font-size: 30px;
     }
 }
@@ -627,7 +618,7 @@ body {
     &:hover {
         color: rgba(0, 126, 126, 1);
     }
-    @media (max-width: $md3 + px) {
+    @media (max-width: 766.98px) {
         font-size: 40px;
     }
 }
