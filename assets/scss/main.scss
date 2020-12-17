@@ -243,6 +243,14 @@ body {
             background: rgba(255, 117, 4, 1);
         }
     }
+    @media (max-width: $md3 + px) {
+        &__scroll {
+            width: 2px;
+        }
+        &__drag-scroll {
+            width: 100%;
+        }
+    }
 }
 //=========================
 .screen {

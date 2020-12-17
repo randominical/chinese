@@ -243,6 +243,11 @@ body {
     transition: all .3s ease 0s !important; }
     .page__drag-scroll:hover {
       background: #ff7504; }
+  @media (max-width: 766.98px) {
+    .page__scroll {
+      width: 2px; }
+    .page__drag-scroll {
+      width: 100%; } }
 
 .screen {
   -webkit-box-flex: 1;
