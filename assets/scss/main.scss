@@ -38,6 +38,9 @@ body {
     @media (max-width: $md3 + px) {
         font-size: 20px;
     }
+    @media (max-width: $md4 + px) {
+        font-size: 16px;
+    }
 }
 //=========================
 .wrapper {
@@ -432,6 +435,11 @@ body {
             }
         }
     }
+    @media (max-width: 570px) {
+        &__box {
+            width: 100%;
+        }
+    }
     @media (max-width: $md4 + px) {
         &__title {
             font-size: 20px;
@@ -459,6 +467,11 @@ body {
         font-size: 20px;
         p {
             margin: .5em 0;
+        }
+    }
+    @media (max-width: 570px) {
+        &__text {
+            font-size: 14px !important;
         }
     }
 }

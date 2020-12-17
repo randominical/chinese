@@ -29,6 +29,10 @@ body {
     html,
     body {
       font-size: 20px; } }
+  @media (max-width: 479.98px) {
+    html,
+    body {
+      font-size: 16px; } }
 
 .wrapper {
   min-height: 100%;
@@ -388,6 +392,9 @@ body {
         font-size: 35px; }
     .screen:first-child .screen__text {
       font-size: 28px; } }
+  @media (max-width: 570px) {
+    .screen__box {
+      width: 100%; } }
   @media (max-width: 479.98px) {
     .screen__title {
       font-size: 20px; }
@@ -409,6 +416,9 @@ body {
   font-size: 20px; }
   .column__text p {
     margin: .5em 0; }
+@media (max-width: 570px) {
+  .column__text {
+    font-size: 14px !important; } }
 
 .form {
   width: 80%;
