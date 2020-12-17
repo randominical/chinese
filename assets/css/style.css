@@ -271,11 +271,6 @@ body {
     .screen__title_m {
       color: #ff3f04;
       font-size: 50px; }
-    @media (max-width: 766.98px) {
-      .screen__title {
-        font-size: 26px; }
-        .screen__title_m {
-          font-size: 35px; } }
   .screen__content {
     padding: 50px 5% 30px 5%;
     position: relative;
@@ -354,9 +349,6 @@ body {
   .screen:first-child .screen__text {
     width: 70%;
     font-size: 40px; }
-    @media (max-width: 766.98px) {
-      .screen:first-child .screen__text {
-        font-size: 28px; } }
   .screen:first-child .screen__image img {
     bottom: 0; }
   .screen:nth-child(2) .screen__body {
@@ -388,6 +380,18 @@ body {
     width: 15%;
     bottom: 30px;
     left: 30px; }
+  @media (max-width: 766.98px) {
+    .screen__title {
+      font-size: 26px; }
+      .screen__title_m {
+        font-size: 35px; }
+    .screen:first-child .screen__text {
+      font-size: 28px; } }
+  @media (max-width: 479.98px) {
+    .screen__title {
+      font-size: 20px; }
+      .screen__title_m {
+        font-size: 24px; } }
 
 .column__photo {
   width: 150px;

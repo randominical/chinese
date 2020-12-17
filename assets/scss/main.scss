@@ -266,12 +266,6 @@ body {
             color: rgba(255, 63, 4, 1);
             font-size: 50px;
         }
-        @media (max-width: $md3 + px) {
-            font-size: 26px;
-            &_m {
-                font-size: 35px;
-            }
-        }
     }
     &__content {
         padding: 50px 5% 30px 5%;
@@ -356,9 +350,6 @@ body {
         .screen__text {
             width: 70%;
             font-size: 40px;
-            @media (max-width: $md3 + px) {
-                font-size: 28px;
-            }
         }
         .screen__image {
             img {
@@ -424,6 +415,27 @@ body {
                 width: 15%;
                 bottom: 30px;
                 left: 30px;
+            }
+        }
+    }
+    @media (max-width: $md3 + px) {
+        &__title {
+            font-size: 26px;
+            &_m {
+                font-size: 35px;
+            }
+        }
+        &:first-child {
+            .screen__text {
+                font-size: 28px;
+            }
+        }
+    }
+    @media (max-width: $md4 + px) {
+        &__title {
+            font-size: 20px;
+            &_m {
+                font-size: 24px;
             }
         }
     }
