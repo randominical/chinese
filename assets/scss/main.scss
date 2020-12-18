@@ -38,33 +38,18 @@ body {
 }
 //=========================
 .wrapper {
-    //flex: 0 0 auto;
     min-height: 100%;
-    width: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
-    overflow: hidden;
     opacity: 0;
     transition: opacity 0.6s ease 0s;
     &._loaded {
         opacity: 1;
     }
-    /*
-    min-height: 100%;
-    opacity: 0;
-    transition: opacity 0.6s ease 0s;
-    &._loaded {
-        opacity: 1;
-        .header {
-            transition: transform 0.6s ease 0.5s;
-            transform: translate(0, 0);
-        }
-    }*/
 }
 //=========================
 .header {
     width: 100%;
     min-width: 280px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,50 +58,46 @@ body {
     left: 0;
     z-index: 2;
     .menu {
-        width: 100%;
         &__burger {
             display: none
         }
         &__list {
-            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            margin: 0 20px 0 0;
+            &:last-child {
+                margin: 0;
+            }
         }
         &__link {
-            flex: 0 1 200px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color:  rgba(190, 190, 190, 0.9);
+            font-size: 16px;
             white-space: nowrap;
-            padding: 0 5px !important;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            &:hover {
-                background:grey;
-                border: 2px solid grey;
+            display: flex;
+            align-items: center;
+            transition: color .3s ease 0s;
+            &._active {
+                color: rgba(216, 50, 0, 1);
             }
         }
-    }
-    @media (max-width: 1500px) {
-        .menu {
+        @media (min-width: 766.99px) {
             &__link {
-                margin: 0 7px;
+                &:hover {
+                    color: rgba(216, 50, 0, .5);
+                }
             }
         }
-    }
-    @media (max-width: 1300px) {
-        &__link {
-            flex: 0 1 180px;
-        }
-        .menu {
+        @media (max-width: 766.98px) {
+            &__list {
+                li {
+                    margin: 0 8px 0 0;
+                }
+            }
             &__link {
-                margin: 0 5px;
+                font-size: 12px;
             }
         }
-    }
-    @media (max-width: 1200px) {
-        .menu {
+        @media (max-width: 540px), (max-height: 500px) {
             &__burger {
                 display: block;
                 position: fixed;
@@ -188,8 +169,42 @@ body {
                     z-index: 3;
                 }
             }
+            &__list {
+                display: block;
+                li {
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                }
+            }
+            &__link {
+                display: block;
+                color:  rgb(126, 126, 126);
+                font-size: 16px;
+                font-weight: 600;
+                text-align: left;
+            }
         }
+    }
+
+/*
+    @media (max-width: 1000px) {
         .menu {
+
+        }
+        .body-menu {
+            &__logo {
+                flex: 0 0 auto;
+                width: 161px;
+                overflow: hidden;
+                margin: 0 0 30px 20px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                &.active {
+                    display: block;
+                }
+            }
             &__list {
                 flex: 0 1 auto;
                 display: block;
@@ -209,13 +224,88 @@ body {
                     color: rgba(53,160,238,1);
                 }
             }
-
+            &__top {
+                flex: 0 1 auto;
+                margin: 0 0 30px 0;
+            }
+            &__bottom {
+                flex: 0 1 auto;
+                color: rgba(60, 70, 78, 1);
+                padding: 0 0 30px 0;
+                p {
+                    margin: 0;
+                }
+                &.active {
+                    display: block;
+                    z-index: 3;
+                }
+                .if_icon {
+                    padding: 0 0 0 37px;
+                    position: relative;
+                    &:before {
+                        font-family: 'Icon1';
+                        font-size: 15px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: rgba(0, 141, 210, 1);
+                    }
+                }
+            }
             &__tel, &__address {
                 margin: 0 0 35px 0;
             }
         }
+        &__address {
+            margin: 0 3.5% 0 0;
+        }
+        &__time {
+            margin: 0 8% 0 0;
+        } 
     }
-    @media (max-width: 400px) {
+    @media (max-width:800px) {
+        &__column {
+            &_1 {
+                flex: 0 0 270px;
+            }
+        }
+        &__logo {
+            flex: 0 0 135px;
+            margin: 0 20px 0 0;
+        }
+        .body-menu {
+            &__logo {
+                width: 135px;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        &__column {
+            &_1 {
+                flex: 0 0 150px;
+            }
+        }
+        .body-menu {
+            &__bottom {
+                width: 100%;
+                padding: 53px 0 35px 0;
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 70%;
+                    height: 1px;
+                    background: rgba(221, 221, 221, 1);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        &__address, &__time, &__lang {
+            display: none !important;
+        }
+    }
+    @media (max-width:400px) {
         .menu {
             &__body {
                 width: 100%;
@@ -230,7 +320,7 @@ body {
             height: 19px;
             position: relative;
         }
-    }
+    }*/
 }
 /*
 .header {
