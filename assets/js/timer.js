@@ -1,18 +1,13 @@
+var countDownDate = new Date("Feb 9, 2021 00:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-function timeToEvent(eventDate) {
-  var now = new Date();
-  var output = '';      
-  var daysToEvent = Math.floor(Math.round(eventDate-now)/86400000);
-  daysToEvent = (daysToEvent < 1) ? "0" + daysToEvent : daysToEvent;   
-  output = daysToEvent + " дн. ";
-  return output;
-};
-
-window.onload = function(){      
-  var eventDate = new Date(2021,2,9);
-  var span = document.getElementById('number');
-
-  window.setInterval(function(){ 
-      span.innerHTML = timeToEvent(eventDate); 
-    },1000);                       
-}
+document.getElementById("number").innerHTML = days + " дн. " + hours + " ч. ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("number").innerHTML = "марафон идёт";
+  }
+}, 1000);
