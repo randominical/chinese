@@ -12,13 +12,15 @@ let pageSlider = new Swiper('.page', {
         pageUpDown: true,
     },
     mousewheel: {
-        sensitivity: 1,
+        mousewheelSensitivity: 1,
     },
     watchOverflow: true,
-    speed: 800,
+    speed: 900,
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
+    simulateTouch: true,
+    resistance: false,
     scrollbar: {
         el: '.page__scroll',
         dragClass: 'page__drag-scroll',
