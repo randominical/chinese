@@ -33,6 +33,10 @@ body {
     html,
     body {
       font-size: 16px; } }
+  @media (max-width: 999.98px) and (max-height: 300px) {
+    html,
+    body {
+      font-size: 14px; } }
 
 .wrapper {
   min-height: 100%;
@@ -178,6 +182,9 @@ body {
         font-size: 16px;
         font-weight: 600;
         text-align: left; } }
+  @media (max-width: 999.98px) and (max-height: 300px) {
+    .header .menu__link {
+      font-size: 14px; } }
 
 .page {
   position: fixed;
@@ -389,6 +396,17 @@ body {
       width: 90%; }
     .screen:first-child .screen__text {
       font-size: 18px; } }
+  @media (max-height: 360px) {
+    .screen__content {
+      padding: 20px 5% 20px 5%; }
+    .screen__title {
+      font-size: 22px; }
+      .screen__title_m {
+        font-size: 28px; }
+    .screen:first-child .screen__text {
+      font-size: 14px; }
+    .screen:nth-child(3) .screen__image img {
+      width: 15%; } }
   @media (max-width: 479.98px) {
     .screen__title {
       font-size: 20px; }
@@ -396,6 +414,20 @@ body {
         font-size: 24px; }
     .screen__box {
       width: 100%; } }
+  @media (max-width: 319.98px) {
+    .screen__title {
+      font-size: 18px; }
+      .screen__title_m {
+        font-size: 22px; } }
+  @media (max-width: 999.98px) and (max-height: 300px) {
+    .screen__title {
+      font-size: 16px; }
+      .screen__title_m {
+        font-size: 18px; }
+    .screen:nth-child(7) .screen__text p {
+      margin: 0; }
+      .screen:nth-child(7) .screen__text p:last-child {
+        margin-bottom: 5px; } }
 
 .column {
   margin: 0 10px 0 0;
@@ -522,6 +554,14 @@ body {
       .form__input_s {
         width: auto;
         padding: 0 40px; } }
+  @media (max-height: 340px) {
+    .form__input {
+      height: 35px; } }
+  @media (max-width: 999.98px) and (max-height: 300px) {
+    .form__input {
+      height: 30px; }
+    .form__input, .form__input:first-child {
+      margin: 0 0 7px 0; } }
 
 .timer__number {
   background: white;
@@ -538,8 +578,9 @@ body {
     .timer__number {
       padding: 15px 12px;
       font-size: 40px; } }
-  @media (max-width: 479.98px) {
+  @media (max-width: 479.98px), (max-height: 340px) {
     .timer__number {
+      padding: 15px 10px;
       font-size: 30px; } }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -554,6 +595,9 @@ body {
   @media (max-width: 766.98px) {
     [class^="icon-"], [class*=" icon-"] {
       font-size: 40px; } }
+  @media (max-height: 340px) {
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 35px; } }
 
 .icon-email:before {
   content: "\e900"; }

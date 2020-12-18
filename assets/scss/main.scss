@@ -35,6 +35,9 @@ body {
     @media (max-width: 479.98px), (max-height: 500px) {
         font-size: 16px;
     }
+    @media (max-width: 999.98px) and (max-height: 300px) {
+        font-size: 14px;
+    }
 }
 //=========================
 .wrapper {
@@ -193,6 +196,13 @@ body {
                 font-size: 16px;
                 font-weight: 600;
                 text-align: left;
+            }
+        }
+    }
+    @media (max-width: 999.98px) and (max-height: 300px) {
+        .menu {
+            &__link {
+                font-size: 14px;
             }
         }
     }
@@ -451,6 +461,29 @@ body {
             }
         }
     }
+    @media (max-height: 360px) {
+        &__content {
+            padding: 20px 5% 20px 5%;
+        }
+        &__title {
+            font-size: 22px;
+            &_m {
+                font-size: 28px;
+            }
+        }
+        &:first-child {
+            .screen__text {
+                font-size: 14px;
+            }
+        }
+        &:nth-child(3) {
+            .screen__image {
+                img {
+                    width: 15%;
+                }
+            }
+        }
+    }
     @media (max-width: 479.98px) {
         &__title {
             font-size: 20px;
@@ -460,6 +493,32 @@ body {
         }
         &__box {
             width: 100%;
+        }
+    }
+    @media (max-width: 319.98px) {
+        &__title {
+            font-size: 18px;
+            &_m {
+                font-size: 22px;
+            }
+        }
+    }
+    @media (max-width: 999.98px) and (max-height: 300px) {
+        &__title {
+            font-size: 16px;
+            &_m {
+                font-size: 18px;
+            }
+        }
+        &:nth-child(7) {
+            .screen__text {
+                p {
+                    margin: 0;
+                    &:last-child {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
         }
     }
 }
@@ -596,6 +655,19 @@ body {
             }
         }
     }
+    @media (max-height: 340px) {
+        &__input {
+            height: 35px;
+        }
+    }
+    @media (max-width: 999.98px) and (max-height: 300px) {
+        &__input {
+            height: 30px;
+        }
+        &__input, &__input:first-child {
+            margin: 0 0 7px 0;
+        }
+    }
 }
 //=========================
 .timer__number {
@@ -612,7 +684,8 @@ body {
         padding: 15px 12px;
         font-size: 40px;
     }
-    @media (max-width: 479.98px) {
+    @media (max-width: 479.98px), (max-height: 340px) {
+        padding: 15px 10px;
         font-size: 30px;
     }
 }
@@ -629,6 +702,9 @@ body {
     }
     @media (max-width: 766.98px) {
         font-size: 40px;
+    }
+    @media (max-height: 340px) {
+        font-size: 35px;
     }
 }
 .icon {
